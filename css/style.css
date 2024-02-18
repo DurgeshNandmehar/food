@@ -1,0 +1,59 @@
+/* header  */
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.hamButton {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hamButton .line {
+    width: 100%;
+    height: 5px;
+    display: block;
+    border-radius: 4px;
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.numBtn {
+    background-color: #a82c48;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+
+/* toggle class css  */
+.hamButtonClose .middleLine {
+    width: 0;
+}
+
+.hamButtonClose .topLine {
+    transform: translateY(11px) rotate(45deg);
+}
+
+.hamButtonClose .bottomLine {
+    transform: translateY(-11px) rotate(-45deg);
+}
+
+/* Home Secton  */
+#home {
+    border: 2px solid red;
+    width: 100%;
+    background: url("../images/bg/bg-1.jpg") no-repeat center;
+    background-size: cover;
+    padding-top: 15rem;
+    height: 100dvh;
+}
