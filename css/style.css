@@ -195,7 +195,7 @@ header {
     background-size: cover;
 }
 
-.fa-solid{
+ul li .fa-solid{
     color: var(--primary-color);
     margin-right: 6px;
 }
