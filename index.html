@@ -10,32 +10,20 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsiveStyle.css">
-    <style>
-
-        .container-md{
-            border: 2px solid red;
-        }
-        .row {
-            border: 2px solid green;
-        }
-
-        .row>div {
-            border: 2px solid blue;
-        }
-    </style>
+ 
 </head>
 
 <body>
     <!-- Header   -->
-    <header>
-        <nav class="navbar navbar-expand-md">
+    <header class="bg-white ">
+        <nav class="navbar navbar-expand-md ">
             <div class="container-md ">
                 <a class="navbar-brand" href="#"><img src="images/logo.png" alt="load" width="120"></a>
                 <div class="navbar-toggler border-0 p-0 " type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <!-- <span class="navbar-toggler-icon">d</span> -->
-                    <span class="hamButton" id="hamButton">
+                    <span class="hamMenu" id="hamButton">
                         <span class="line topLine"></span>
                         <span class="line middleLine"></span>
                         <span class="line bottomLine"></span>
@@ -43,68 +31,344 @@
                 </div>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-lg-0">
+                    <ul class="navbar-nav ms-auto mb-lg-0 navLinks">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
+                            <a class="nav-link" href="#about">About Us</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Explore Foods</a>
+                            <a class="nav-link" href="#exploreFoods">Explore Foods</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Reviews</a>
+                            <a class="nav-link" href="#review">Reviews</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">FAQ</a>
+                            <a class="nav-link" href="#faq">FAQ</a>
                         </li>
 
-                        <li class="nav-item ps-md-3 ">
-                            <button class="bottom-0 py-2 px-4 numBtn">234 345 4343</button>
+                        <li class="ms-2 ">
+                            <button class="mainBtn">234 345 4343</button>
                         </li>
 
                     </ul>
                 </div>
-
-
             </div>
         </nav>
     </header>
 
     <!-- Home Section  -->
-    <section id="home" class="">
+    <section id="home" class="comanPadding">
         <div class="container-md ">
             <div class="row">
                 <div class="col-md-6 col-sm-8">
                     <div>
-                        <h1 class="mb-4">Good food choices are good investments.</h1>
-                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eum quo placeat mollitia quae
+                        <h1 class="mb-5 homeHeading">Good food choices are good investments.</h1>
+                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eum quo placeat
+                            mollitia quae
                             odit iusto inventore sit laudantium temporibus.
                         </p>
 
-                        <div>
-                            <button class="btn btn-success ">Order Now <i class="fa-solid fa-cart-shopping"></i></button>
-                            <button class="btn btn-success ">Order Now</button>
+                        <div class="mb-3">
+                            <button class="me-2 mb-2  mainBtn">Order Now
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                            <button class=" whiteBtn"> Check Offers
+                                <i class="fa-solid fa-percent"></i>
+                            </button>
                         </div>
-
-
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Counter Section  -->
+    <section id="counter" class="comanPadding">
+        <div class="container-md">
+            <div class="row">
+                <div class="col-md-3  mb-4 ">
+                    <div class="text-center">
+                        <span class="d-block fs-2 fw-bold  ">3424+</span>
+                        <span class="d-block counterTitle ">SAVINGS</span>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4 ">
+                    <div class="text-center ">
+                        <span class="d-block fs-2 fw-bold  ">424+</span>
+                        <span class="d-block counterTitle ">PHOTOS</span>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4 ">
+                    <div class="text-center ">
+                        <span class="d-block fs-2 fw-bold  ">1424+</span>
+                        <span class="d-block counterTitle ">ROCKETS</span>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4 ">
+                    <div class="text-center ">
+                        <span class="d-block fs-2 fw-bold  ">2424+</span>
+                        <span class="d-block counterTitle ">GLOBES</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section  -->
+    <section id="about" class="comanPadding">
+        <div class="container-md mb-lg-0  mb-5 ">
+            <div class="row align-items-center ">
+                <div class="col-lg-7 col-md-12 mb-lg-0  mb-4  ">
+
+                    <img src="./images/img-1.png" alt="load" class="img-fluid ">
+
+                </div>
+
+                <div class="col-lg-5 col-md-12 ">
+                    <h2>We Pride Ourselves On Making Real Food From The Best Ingredients.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quidem atque eaque at
+                        itaque deleniti quaerat beatae voluptas, delectus omnis.
+                    </p>
+                    <button class=" mainBtn" type="button">Learn More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- About part 2  -->
+        <div class="container-md foodType">
+            <div class="row align-items-center ">
+                <div class="col-lg-5 col-md-12 ">
+                    <h2>We make everything by hand with the best possible ingredients.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quaerat voluptatibus quidem
+                        praesentium eveniet doloribus harum molestiae assumenda alias, reiciendis accusamus ad
+                        consectetur eum unde reprehenderit neque, ipsam earum animi.
+                    </p>
+
+                    <ul class="list-unstyled py-3 ">
+                        <li><i class="fa-solid fa-check"></i> Etiam sed dolor ac diam volutpat.</li>
+                        <li><i class="fa-solid fa-check"></i> Erat volutpat aliquet imperdiet.</li>
+                        <li><i class="fa-solid fa-check"></i> Purus a odio finibus bibendum.</li>
+                    </ul>
+                    <button type="button" class="mainBtn">Learn More</button>
+                </div>
+
+                <div class="col-lg-7 col-md-12 ">
+                    <div class="">
+                        <img src="./images/img-2.png" alt="load" class="img-fluid ">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="aboutStory" class="">
+        <div class="container-md ">
+            <div class="row align-items-center ">
+                <div class="col aboutContent d-flex align-items-center justify-content-center text-center ">
+                    <div class="aboutStoryContent">
+                        <h2 class="whenHeading">When A Man's Stomach Is Full It Makes No Difference Whether He Is Rich
+                            Or Poor.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam magni aperiam officiis
+                            consequuntur nam, laboriosam.</p>
+                        <button class="mainBtn">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Explore Foods  -->
+    <section id="exploreFoods" class="comanPadding">
+        <div class="container-md">
+            <div class="row mb-4">
+                <div class="col text-center ">
+                    <h2>Explore Our Foods</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ex voluptatem, eius quas
+                        laborum illo, repudiandae consequuntur sint molestias sed distinctio doloribus tenetur provident
+                        modi maiores totam quis explicabo obcaecati!
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 mb-4  ">
+                    <div class="card border-0 foodCard">
+                        <div class="card-body   ">
+                            <img src="./images/sandwich.jpg" alt="load" class="img-fluid mb-3 ">
+                            <h6>Rainbow Vegetable Sandwich</h6>
+                            <span class="text-secondary ">Time: 15-20 Minutes | Serves: 1</span>
+                            <h4 class="mb-3 ">100Rs <del class="text-secondary">120Rs</del></h4>
+
+                            <button type="button" class="mainBtn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 mb-4  ">
+                    <div class="card border-0 foodCard">
+                        <div class="card-body">
+                            <img src="./images/burger.jpg" alt="load" class="img-fluid mb-3 ">
+                            <h6>Vegetarian Burger</h6>
+                            <span class="text-secondary ">Time: 30-40 Minutes | Serves: 1</span>
+                            <h4 class="mb-3 ">150Rs <del class="text-secondary">220Rs</del></h4>
+
+                            <button type="button" class="mainBtn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4  ">
+                    <div class="card border-0 foodCard">
+                        <div class="card-body">
+                            <img src="./images/toast.jpg" alt="load" class="img-fluid mb-3 ">
+                            <h6>Raspberry Stuffed French Toast</h6>
+                            <span class="text-secondary ">Time: 15-20 Minutes | Serves: 1</span>
+                            <h4 class="mb-3 ">120Rs <del class="text-secondary">160Rs</del></h4>
+
+                            <button type="button" class="mainBtn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Review Section  -->
+    <section id="review" class="comanPadding">
+        <div class="container-md">
+            <div class="row justify-content-center ">
+                <div class="col-lg-8 text-center ">
+                    <h2 class="mb-4 text-white ">Testimonials</h2>
+                    <div class="bg-white p-5 rounded ">
+                        <img src="./images/durgesh.jpg" alt="load" class="testimonialsLogo mb-3 ">
+                        <div class="px-md-5 mb-3 ">
+                            <q>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts.
+                            </q>
+                        </div>
+                        <span class="tesimonialsName">Durgesh Nandmehar - Web Developer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ  -->
+    <section id="faq" class="comanPadding">
+        <div class="container-md">
+            <div class="row">
+                <h2 class="mb-5">Frequently Asked Questions</h2>
+                <div class="col-lg-6 mb-3">
+                    <h6><span>~</span> Is Foodies Bread Really Baked Fresh Each Day?</h6>
+                    <p class="text-secondary ">Far far away. behind the word mountains, far from the countries Vokalia
+                        and Consonantia. there
+                        live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics,
+                        a large lanuage.
+                    </p>
+                </div>
+
+                <div class="col-lg-6 mb-3">
+                    <h6><span>~</span> Is Foodies Bread Really Baked Fresh Each Day?</h6>
+                    <p class="text-secondary ">Far far away. behind the word mountains, far from the countries Vokalia
+                        and Consonantia. there
+                        live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics,
+                        a large lanuage.
+                    </p>
+                </div>
+
+                <div class="col-lg-6 mb-3">
+                    <h6><span>~</span> Is Foodies Bread Really Baked Fresh Each Day?</h6>
+                    <p class="text-secondary ">Far far away. behind the word mountains, far from the countries Vokalia
+                        and Consonantia. there
+                        live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics,
+                        a large lanuage.
+                    </p>
+                </div>
+
+                <div class="col-lg-6 mb-3">
+                    <h6><span>~</span> Is Foodies Bread Really Baked Fresh Each Day?</h6>
+                    <p class="text-secondary ">Far far away. behind the word mountains, far from the countries Vokalia
+                        and Consonantia. there
+                        live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics,
+                        a large lanuage.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- book Food  -->
+    <section id="bookFood">
+        <div class="container-md">
+            <div class="row">
+                <div class="col">
+                    <div class="bookFoodContent mb-3 ">
+                        <h2 class="text-white ">Baked Fresh Daily By Bakers With Passion.</h2>
+                        <button type="button" class="mainBtn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact  -->
+    <section id="contact" class="comanPadding">
+        <div class="container-md">
+            <div class="row">
+                <div class="col-12  text-center mb-3">
+                    <h2>Hurry Up! Subscribe Our News letter And Get 25% Off</h2>
+                    <p class="mb-4 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet debitis
+                        officiis numquam
+                    </p>
+
+                    <div class="d-flex justify-content-center flex-wrap ">
+                        <input type="text" class="py-2 px-2 me-3  contactInput " placeholder="Enter Email Address">
+                        <button type="button" class="py-2  mainBtn">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer  -->
+    <footer id="footer" class="comanPadding">
+        <div class="container-md">
+            <div class="row">
+
+                <div class="col-12 ">
+                    <div class="d-flex flex-column align-items-center  ">
+
+                        <ul class="footerLink d-sm-flex text-center text-white mb-4 ">
+                            <li class="me-sm-5 mb-3 ">Register</li>
+                            <li class="me-sm-5 mb-3 ">Form</li>
+                            <li class="me-sm-5 mb-3 ">Affiliate</li>
+                            <li class="">FAQ</li>
+                        </ul>
 
 
-
-
-
-
+                        <div class="text-white mb-3 ">
+                            <span class="me-4 fs-4 "><i class="fa-brands fa-facebook-f"></i></span>
+                            <span class="me-4 fs-4 "><i class="fa-brands fa-twitter"></i></span>
+                            <span class="me-4 fs-4 "><i class="fa-brands fa-youtube"></i></span>
+                            <span class="me-4 fs-4 "><i class="fa-solid fa-globe"></i></span>
+                            <span class="me-4 fs-4 "><i class="fa-brands fa-linkedin"></i></span>
+                            <span class=" fs-4 "><i class="fa-brands fa-instagram"></i></span>
+                        </div>
+                        <span class="d-inline-block  text-white footerText">&copy; 2024. A.D.Rafter... All rights
+                            reserved</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
